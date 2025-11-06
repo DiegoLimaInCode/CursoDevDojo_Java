@@ -25,6 +25,6 @@ public class ListaArrayConversaoTest01 {
         numerosList.add(15);
         System.out.println(numerosList);
 
-        List<String> list = Arrays.asList("1", "2");
+        System.out.println("Bernardo 777");
     }
 }
