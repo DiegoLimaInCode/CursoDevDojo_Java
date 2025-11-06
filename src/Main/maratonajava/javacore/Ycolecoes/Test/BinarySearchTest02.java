@@ -17,10 +17,12 @@ public class BinarySearchTest02 {
         mangas.add(new Manga(4L, "Attack on titan", 5.40));
         mangas.add(new Manga(6L, "Barserker", 234.3));
         Collections.sort(mangas);
+
         for (Manga manga : mangas) {
             System.out.println(manga);
         }
-
         Manga mangaToSearch = new Manga(6L, "Barserker", 234.3);
+
+        System.out.println(Collections.binarySearch(mangas,mangaToSearch));
     }
 }
