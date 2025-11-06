@@ -1,4 +1,4 @@
-# 🚀 [Nome do Projeto]
+# 🚀 [Curso DevDojo Java]
 
 ## ✨ Descrição
 
