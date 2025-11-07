@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MapTest01 {
     static void main() {
-        Map<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>(); //pode ser usada a LinkedHashMap para continuar na mesma forma que colocou, na ordem
         map.put("teklado", "teclado");
         map.put("mouze", "mouse");
         map.put("vc", "você");
