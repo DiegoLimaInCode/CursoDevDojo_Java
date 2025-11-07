@@ -3,12 +3,12 @@ package Main.maratonajava.javacore.Ycolecoes.Test;
 import Main.maratonajava.javacore.Ycolecoes.Domain.Manga;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class IteratorTest01 {
     static void main() {
-        List<Manga> mangas = new ArrayList<>(6);
+        List<Manga> mangas = new LinkedList<>();
         mangas.add(new Manga(5L, "Berserker", 100.25, 0));
         mangas.add(new Manga(3L, "Pokemon", 10.2, 5));
         mangas.add(new Manga(1L, "Hellsing ultimate", 20.1, 0));
