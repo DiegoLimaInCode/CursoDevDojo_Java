@@ -9,5 +9,10 @@ public class ClasseGenericaTest01 {
         Carro carro = carroRentavelService.buscarCarroDisponivel();
         System.out.println("Usando carro por um mes...");
         carroRentavelService.retornarCarroALugado(carro);
+
+
+
+
+
     }
 }
