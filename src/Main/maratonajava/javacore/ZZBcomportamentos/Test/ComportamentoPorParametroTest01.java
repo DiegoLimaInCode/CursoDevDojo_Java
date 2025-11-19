@@ -13,11 +13,11 @@ public class ComportamentoPorParametroTest01 {
         System.out.println(filterCarByColor(cars, "red"));
         System.out.println(filterCarByColor(cars, "green"));
         System.out.println("----------");
-        System.out.println(filterCarByYear(cars,2025));
+        System.out.println(filterCarByYear(cars, 2025));
         System.out.println("----------");
-        System.out.println(filterCarByYear(cars,2010));
+        System.out.println(filterCarByYear(cars, 2010));
         System.out.println("----------");
-        System.out.println(filterCarByYear(cars,1997));
+        System.out.println(filterCarByYear(cars, 1997));
 
     }
 
