@@ -1,4 +1,4 @@
-package Main.maratonajava.javacore.ZZClambdas;
+package Main.maratonajava.javacore.ZZClambdas.test;
 
 import java.util.List;
 import java.util.function.Consumer;
