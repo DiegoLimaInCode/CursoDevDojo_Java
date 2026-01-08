@@ -1,0 +1,37 @@
+package Main.maratonajava.javacore.ZZEStreams.test;
+
+import Main.maratonajava.javacore.ZZEStreams.domain.LightNovel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StreamTest06 {
+    private static List<LightNovel> lightNovels = new ArrayList<>(List.of(
+            new LightNovel("Tensei Shittara", 8.99),
+            new LightNovel("Overlord", 3.99),
+            new LightNovel("violet Evergarden", 5.99),
+            new LightNovel("No Game no life", 2.99),
+            new LightNovel("Full metal Alchemist", 5.99),
+            new LightNovel("Kumo desuga", 1.99),
+            new LightNovel("Kumo desuga", 1.99),
+            new LightNovel("Monogatari", 4)
+    ));
+
+    static void main() {
+        System.out.println(lightNovels.stream().anyMatch(lightNovel -> lightNovel.getPrice() > 8));
+        System.out.println(lightNovels.stream().allMatch(ln -> ln.getPrice() > 0));
+        System.out.println(lightNovels.stream().noneMatch(ln -> ln.getPrice() > 0));
+
+        lightNovels.stream()
+                .filter(ln -> ln.getPrice() > 3)
+                .findAny()
+                .ifPresent(System.out::println);
+
+        lightNovels.stream()
+                .filter(ln -> ln.getPrice() > 3)
+                .findFirst()
+                .ifPresent(System.out::println);
+
+
+    }
+}
