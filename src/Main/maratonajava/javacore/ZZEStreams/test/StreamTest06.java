@@ -3,6 +3,7 @@ package Main.maratonajava.javacore.ZZEStreams.test;
 import Main.maratonajava.javacore.ZZEStreams.domain.LightNovel;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class StreamTest06 {
@@ -29,6 +30,7 @@ public class StreamTest06 {
 
         lightNovels.stream()
                 .filter(ln -> ln.getPrice() > 3)
+                .sorted(Comparator.comparing(LightNovel::getPrice))
                 .findFirst()
                 .ifPresent(System.out::println);
 
